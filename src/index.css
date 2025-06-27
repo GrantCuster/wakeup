@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@font-face {
+  font-family: "DepartureMono";
+  src:
+    url("./assets/fonts/DepartureMono-Regular.woff2") format("woff2"),
+    url("./assets/fonts/DepartureMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  background: theme("colors.black");
+  color: theme("colors.white");
+  font-family: "DepartureMono", monospace;
+  font-size: 14px;
+}
+
+input,
+textarea,
+select {
+  background: theme("colors.neutral.900");
+  color: theme("colors.white");
+}
